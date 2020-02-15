@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Google Book Search API</title>
+</head>
+<header>
+    <nav class="nav-wrapper #64b5f6 blue lighten-2">
+        <div class="">
+            <a href="#" class="brand-logo headName" onClick="window.location.reload();">Google API Book Search</a>
+
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="search" class="">
+                    <form id="myform">
+                        <div class="input-field">
+                            <input type="search" id="books">
+                            <label for="search" class="searchField">Search Books</label>
+                        </div>
+                        <button class="btn blue darken-1">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="result" class="col s8 offset-m2 ">
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer #64b5f6 blue lighten-2
+">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Matthew K. Young</h5>
+                    <p class="grey-text text-lighten-4">This was a project for WEB 4890.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Find Me.</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Linkedin</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Bēhance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+
+                <a class="footerText" href="https://developers.google.com/books">Google Books API</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
