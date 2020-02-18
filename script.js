@@ -7,18 +7,10 @@ $(document).ready(function () {
         if (search == "") {
             alert("Please enter something in the field");
         } else {
-            var url = "";
-            var img = "";
-            var title = "";
-            var author = "";
-            var description = "";
 
-            var publisher = "";
-            var publishDate = "";
-            var pageCount = "";
-            var category = "";
-            var ratingAvg = "";
-            var ratingCount = "";
+            let url, img, image, items, title, author, description, publisher, publishDate, pageCount, category, ratingAvg, ratingCount = "";
+
+
 
 
 
@@ -30,7 +22,9 @@ $(document).ready(function () {
 
                     author = $('<h5 class="author center-align"> By: ' + response.items[i].volumeInfo.authors + '</h5>');
 
-                    img = $('<img class="aligning card z-depth-5" id="dynamic"><br><a href=' + response.items[i].volumeInfo.infoLink + '><button id="" class="btn blue darken-1 aligning imagebtn">Read More</button></a><br>');
+                    img = $('<img class="aligning card z-depth-5" id="dynamic"><br><a href=' + response.items[i].volumeInfo.imageLinks + '><button id="" class="btn blue darken-1 aligning imagebtn">Read More</button></a><br>');
+
+                    // image: ((items[i].volumeInfo.imageLinks) ? items[i].volumeInfo.imageLinks.thumbnail : undefined)
 
                     description = $('<p flow-text>Description: ' + response.items[i].volumeInfo.description + '</p>');
                     url = response.items[i].volumeInfo.imageLinks.thumbnail;
